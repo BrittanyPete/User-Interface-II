@@ -110,21 +110,31 @@ nav a{
 }
 
 /*about section styling*/
-.about-me{
-    display:flex;
-    flex-flow: row wrap;
-    justify-content:space-between;
-    margin: 30px 10%;
-}
-.big-img{
-    width: 30%;
+#about{
+    padding-bottom:0;
 }
 
-.description{
+ .about-me{
+    display:flex;
+    justify-content: space-around;
+}
+.big-img, .text{
+    width:40%;
+}
+.big-img{
+    margin-top: 2vh;
+}
+
+.text{
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 550px;
+}
+.text h2{
+    padding-bottom: 20px;
+}
+.text p{
+    padding-top:20px;
 }
 .my-proj{
     font-family: 'Montserrat', sans-serif;
@@ -150,7 +160,7 @@ nav a{
     display:flex;
     flex-direction: column;
     text-align: center;
-    width:375px;
+    width:300px;
     margin: 10px;
 }
 
