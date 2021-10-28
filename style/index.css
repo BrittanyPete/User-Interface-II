@@ -176,4 +176,6 @@ nav a{
     color:#F1F6F9;
     padding-bottom: 2vh;
 }
-
+.bottom a{
+    margin: 20px;
+}
