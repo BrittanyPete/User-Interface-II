@@ -179,3 +179,12 @@ nav a{
 .bottom a{
     margin: 20px;
 }
+
+/*media queries*/
+@media(max-width: 800px) {
+
+}
+
+@media(max-width:500px) {
+    
+}
