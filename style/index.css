@@ -33,7 +33,7 @@ footer, header, hgroup, menu, nav, section {
     padding:0;
     margin:0;
     max-width:100%;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
 }
 
 /* font-family: 'Montserrat', sans-serif;
@@ -129,7 +129,7 @@ nav a{
     justify-content: flex-end;
 }
 .text h2{
-    padding-bottom: 20px;
+    padding-bottom: 7vh;
 }
 .text p{
     padding-top:20px;
@@ -139,7 +139,6 @@ nav a{
     font-size: 1.8rem;
     background-color:#F1F6F9;
     padding: 1% 3%;
-    /* border-radius: 10%; */
     color:#394867;
     width: 24%;
     text-align:center;
@@ -185,17 +184,20 @@ nav a{
         font-size: 4rem;
     }
     .links a{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     /*about section styling*/
     .big-img{
         margin-top: 7vh;
     }
+    .proj{
+        width: 30%;
+    }
 
     /*footer section styling*/
     a.social{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -208,7 +210,7 @@ nav a{
     .links a{
         font-size: 1.4rem;
         display: flex;
-        width: 25%;
+        width: 20%;
         justify-content: center;
         border: 1px solid #394867;
     }
@@ -224,9 +226,35 @@ nav a{
         align-items: center;
     }
     .big-img, .text{
+        text-align: center;
+        width:95%;
+    }
+    .about-section{
         display: flex;
+        flex-direction: column;
         width:100%;
-        justify-content: center;
+        align-items: center;
+    }
+    .text h2{
+        padding-bottom: 3vh;
+    }
+    .my-proj{
+        font-size: 1.4rem;
+        width: 25%;
+    }
+    .text p {
+        text-align: center;
+    }
+
+    /*projects section styling*/
+    .proj{
+        width: 45%;
+        padding-bottom: 5vh;
+    }
+
+    /*footer section styling*/
+    a.social{
+        font-size: 1.2rem;
     }
     
 }
