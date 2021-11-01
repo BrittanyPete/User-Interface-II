@@ -105,6 +105,7 @@ nav{
 }
 nav a{
     margin-left: 2%;
+    border: 1px solid #14274E;
 }
 
 /*about section styling*/
@@ -112,7 +113,7 @@ nav a{
     padding-bottom:0;
 }
 
- .about-me{
+.about-me{
     display:flex;
     justify-content: space-around;
 }
@@ -132,16 +133,17 @@ nav a{
     padding-bottom: 7vh;
 }
 .text p{
-    padding-top:20px;
+    padding-top:10vh;
 }
 .my-proj{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
     background-color:#F1F6F9;
     padding: 1% 3%;
-    color:#394867;
+    color:#14274E;
     width: 24%;
     text-align:center;
+    border: 1px solid #14274E;
 }
 
 
@@ -175,12 +177,70 @@ nav a{
 }
 .bottom a{
     margin: .5%;
+    border: 1px solid #14274E;
 }
 .social{
     font-size: 1.4rem;
 }
 
 /*media queries*/
+@media(max-width:1920px){
+    nav{
+        padding-left:4%;
+        padding-bottom: 5vh;
+    }
+    .about-me{
+        margin:10vh auto;
+    }
+    .big-img{
+        text-align:center;
+    }
+    .text h2{
+        font-size: 5rem;
+    }
+    .text p{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    .bottom h2{
+        padding-top:5vh;
+        padding-bottom: 7vh;
+    }
+    .bottom div{
+        margin-bottom: 5vh;
+    }
+}
+
+@media(max-width:1366px){
+    nav{
+        padding-left:2%;
+    }
+    /*about section styling*/
+    .about-me{
+        margin: 5vh auto;
+    }
+    .big-img{
+        text-align: center;
+    }
+    .text h2{
+        font-size: 4rem;
+    }
+    .text p{
+        font-size: 1.6rem;
+    }
+    h3{
+        font-size: 1.6rem;
+    }
+    /*footer section styling*/
+    .bottom h2{
+        padding-bottom: 5vh;
+    }
+}
+
+
+
 @media(max-width: 800px) {
     /*nav styling section*/
     h1{
@@ -215,7 +275,6 @@ nav a{
         display: flex;
         width: 20%;
         justify-content: center;
-        border: 1px solid #394867;
     }
     nav a{
         margin: auto;
@@ -280,19 +339,4 @@ nav a{
     }
 }
 
-@media(max-width:1366px){
-    nav{
-        padding-left:2%;
-    }
-    /*about section styling*/
-    .about-me{
-        margin: 5vh auto;
-    }
-    .big-img{
-        text-align: center;
-    }
-    /*footer section styling*/
-    .bottom h2{
-        padding-bottom: 5vh;
-    }
-}
+
