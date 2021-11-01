@@ -176,6 +176,9 @@ nav a{
 .bottom a{
     margin: .5%;
 }
+.social{
+    font-size: 1.4rem;
+}
 
 /*media queries*/
 @media(max-width: 800px) {
@@ -244,6 +247,7 @@ nav a{
     }
     .text p {
         text-align: center;
+        margin: auto 7%;
     }
 
     /*projects section styling*/
@@ -256,5 +260,39 @@ nav a{
     a.social{
         font-size: 1.2rem;
     }
-    
+}
+
+@media(max-width:360px){
+    /*header styling section*/
+    h1{
+        font-size: 3.5rem;
+    }
+    .links a{
+        width: 25%;
+    }
+    /*about me section*/
+    .my-proj{
+        width:30%;
+    }
+    /*projects styling section*/
+    .proj{
+        width: 75%;
+    }
+}
+
+@media(max-width:1366px){
+    nav{
+        padding-left:2%;
+    }
+    /*about section styling*/
+    .about-me{
+        margin: 5vh auto;
+    }
+    .big-img{
+        text-align: center;
+    }
+    /*footer section styling*/
+    .bottom h2{
+        padding-bottom: 5vh;
+    }
 }
