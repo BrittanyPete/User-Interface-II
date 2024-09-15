@@ -1,1 +1,362 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    /* border: 1px solid grey; */
+}
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Patrick Hand', cursive; */
+
+/*general styles*/
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.8rem;
+    line-height:1.5;
+    color:#14274E;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    color: #F1F6F9;
+    font-size: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-left: 2vh;
+    margin-top:2%;
+    margin-bottom:2vh;
+}
+h2{
+    font-size: 3.5rem;
+    font-family: 'Patrick Hand', cursive;
+}
+h3{
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    color:#14274E;
+    font-size: 1.8rem;
+    text-decoration: none;
+    background-color: #F1F6F9;
+    padding: .5% 1%;
+}
+a:hover{
+    color:#f1f6f9;
+    background-color: #394867;
+}
+button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    background-color:#F1F6F9;
+    padding: 1% 3%;
+    color:#14274E;
+
+}
+
+
+
+/*nav styling*/
+nav{
+    background-color: #9BA4B4;
+    display: flex;
+    flex-direction: column;
+}
+.links{
+    background-color: #9BA4B4;
+    margin-bottom:3vh;
+}
+nav a{
+    margin-left: 2%;
+    border: 1px solid #14274E;
+}
+
+/*about section styling*/
+#about{
+    padding-bottom:0;
+}
+
+.about-me{
+    display:flex;
+    justify-content: space-around;
+}
+.big-img, .text{
+    width:40%;
+}
+.big-img{
+    margin-top: 2vh;
+}
+
+.text{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.text h2{
+    padding-bottom: 7vh;
+}
+.text p{
+    padding-top:10vh;
+}
+.my-proj{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    background-color:#F1F6F9;
+    padding: 1% 3%;
+    color:#14274E;
+    width: 24%;
+    text-align:center;
+    border: 1px solid #14274E;
+}
+
+
+/*project section styling*/
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    padding: 20px 2%;
+ 
+}
+.proj{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width: 23%;
+    margin: 10px;
+}
+
+/*footer section styling*/
+.bottom{
+    background-color:#9BA4B4;
+    padding-top:10px;
+    padding-bottom:20px;
+    text-align: center;
+}
+
+.bottom h2{
+    color:#F1F6F9;
+    padding-bottom: 2vh;
+}
+.bottom a{
+    margin: .5%;
+    border: 1px solid #14274E;
+}
+.social{
+    font-size: 1.4rem;
+}
+
+/*media queries*/
+@media(max-width:1920px){
+    nav{
+        padding-left:4%;
+        padding-bottom: 5vh;
+    }
+    .about-me{
+        margin:10vh auto;
+    }
+    .big-img{
+        text-align:center;
+    }
+    .text h2{
+        font-size: 5rem;
+    }
+    .text p{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    .bottom h2{
+        padding-top:5vh;
+        padding-bottom: 7vh;
+    }
+    .bottom div{
+        margin-bottom: 5vh;
+    }
+}
+
+@media(max-width:1366px){
+    nav{
+        padding-left:2%;
+    }
+    /*about section styling*/
+    .about-me{
+        margin: 5vh auto;
+    }
+    .big-img{
+        text-align: center;
+    }
+    .about-section h2{
+        padding-bottom: 4vh;
+    }
+    .about-section p{
+        padding-top: 4vh;
+    }
+    .text h2{
+        font-size: 4rem;
+    }
+    .text p{
+        font-size: 1.8rem;
+    }
+    h3{
+        font-size: 1.8rem;
+    }
+    /*footer section styling*/
+    .bottom h2{
+        padding-bottom: 5vh;
+    }
+}
+
+
+
+@media(max-width: 800px) {
+    /*nav styling section*/
+    h1{
+        font-size: 4rem;
+    }
+    .links a{
+        font-size: 1.4rem;
+    }
+
+    /*about section styling*/
+    .big-img{
+        margin-top: 7vh;
+    }
+    .about-section h2{
+        padding-bottom: 4vh;
+    }
+    .about-section p{
+        padding-top: 4vh;
+    }
+    .proj{
+        width: 30%;
+    }
+
+    /*footer section styling*/
+    a.social{
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:500px) {
+    /*header section styling*/
+    h1{
+        text-align: center;
+    }
+    
+    .links a{
+        font-size: 1.6rem;
+        display: flex;
+        width: 20%;
+        justify-content: center;
+        margin:1% auto;
+    }
+    nav a{
+        margin: auto;
+    }
+
+    /*about section styling*/
+    .about-me {
+        display:flex;
+        flex-direction: column;
+        flex:wrap;
+        align-items: center;
+    }
+    .big-img, .text{
+        text-align: center;
+        width:95%;
+    }
+    .about-section{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        align-items: center;
+    }
+    .text h2{
+        padding-bottom: 3vh;
+    }
+    .my-proj{
+        font-size: 1.4rem;
+        width: 25%;
+    }
+    .text p {
+        text-align: center;
+        margin: auto 7%;
+    }
+
+    /*projects section styling*/
+    .proj{
+        width: 45%;
+        padding-bottom: 5vh;
+    }
+
+    /*footer section styling*/
+    a.social{
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:360px){
+    /*header styling section*/
+    h1{
+        font-size: 3.5rem;
+    }
+    .links a{
+        font: size 1.4rem;
+        width: 25%;
+    }
+    /*about me section*/
+    .big-img {
+        margin-top: 2vh;
+    }
+    .my-proj{
+        width:40%;
+    }
+    .text p{
+        padding-top:5vh;
+    }
+    /*projects styling section*/
+    .proj{
+        width: 75%;
+    }
+}
+
+
